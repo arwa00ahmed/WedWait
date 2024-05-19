@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1062405555497",
+    "project_id": "wedwait",
+    "storage_bucket": "wedwait.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1234567890:android:abcdefg12345",
+        "android_client_info": {
+          "package_name": "com.example.correct_package_name"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOrUV1yGGM0HMkMbGJxH4hwTFBne0RpGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
