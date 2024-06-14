@@ -13,6 +13,21 @@
         android:theme="@style/Theme.WedWaitApp"
         tools:targetApi="31">
         <activity
+            android:name=".BudgetMain"
+            android:exported="false" />
+        <activity
+            android:name=".VistirsListMain"
+            android:exported="false" />
+        <activity
+            android:name=".ToDoo"
+            android:exported="false" />
+        <activity
+            android:name=".account"
+            android:exported="false" />
+        <activity
+            android:name=".search"
+            android:exported="false" />
+        <activity
             android:name=".Register"
             android:exported="false" />
         <activity
@@ -36,8 +51,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

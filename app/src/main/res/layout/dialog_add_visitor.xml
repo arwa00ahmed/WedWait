@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    >
+
+
+    <EditText
+        android:id="@+id/et_visitor_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter visitor name"
+        android:textColorHint="@color/gray"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/brownred"
+        android:inputType="text"
+        android:layout_marginBottom="8dp"
+         />
+
+
+    <EditText
+        android:id="@+id/et_visitor_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter visitor phone number"
+        android:textColorHint="@color/gray"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/brownred"
+        android:inputType="phone"
+         />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/brownred"
+            android:layout_marginRight="8dp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/brownred" />
+    </LinearLayout>
+</LinearLayout>
