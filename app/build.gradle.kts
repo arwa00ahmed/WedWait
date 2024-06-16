@@ -1,4 +1,5 @@
 plugins {
+<<<<<<< HEAD
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
@@ -9,6 +10,22 @@ android {
 
     defaultConfig {
         applicationId = "com.example.wedwaitapp"
+=======
+    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.jetbrainsKotlinAndroid)
+}
+
+android {
+    namespace = "com.example.myapplication2"
+    compileSdk = 34
+
+    buildFeatures{
+        viewBinding = true
+    }
+
+    defaultConfig {
+        applicationId = "com.example.myapplication2"
+>>>>>>> teammate/main
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -37,6 +54,7 @@ android {
 
 dependencies {
 
+<<<<<<< HEAD
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
@@ -47,4 +65,15 @@ dependencies {
     implementation ("com.google.android.material:material:1.2.1")
     implementation ("com.google.android.material:material:1.4.0")
 
+=======
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    implementation ("com.google.android.material:material:1.11.0-alpha01")
+>>>>>>> teammate/main
 }

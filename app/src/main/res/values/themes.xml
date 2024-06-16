@@ -1,9 +1,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
     <style name="Base.Theme.WedWaitApp" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
     <style name="Theme.WedWaitApp" parent="Base.Theme.WedWaitApp" />
+=======
+    <style name="Base.Theme.MyApplication2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/colorBN</item>
+    </style>
+
+    <style name="Theme.MyApplication2" parent="Base.Theme.MyApplication2" />
+
+
+    <style name="App.custom" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+
+        <item name="android:color">@color/orange</item>
+        
+        </style>
+
+
+>>>>>>> teammate/main
 </resources>

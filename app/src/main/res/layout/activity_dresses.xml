@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DressesActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBN">
+            <ImageView
+                android:id="@+id/bottomBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bottom_bk"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dresses"
+                android:textSize="32sp"
+                android:gravity="center"
+
+                />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view_e_a"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/item_dresses"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

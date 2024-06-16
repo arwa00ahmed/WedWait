@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/image_store1"
+        android:layout_width="159dp"
+        android:layout_height="123dp"
+        android:src="@drawable/image_store1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="17dp"
+
+        />
+
+    <TextView
+        android:id="@+id/discription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Electric-Water-Heater"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="17dp"
+        app:layout_constraintTop_toBottomOf="@id/image_store1"
+        android:layout_marginTop="7dp"
+
+        />
+
+    <TextView
+        android:id="@+id/sallary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/discription"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="17dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        tools:text="EGY 3000"
+        android:textColor="@color/orange"
+        android:layout_marginTop="7dp"
+        />
+    <ImageView
+        android:id="@+id/egy_3700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/sallary"
+        app:layout_constraintTop_toBottomOf="@id/discription"
+        android:src="@drawable/egy_3700"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="25dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
